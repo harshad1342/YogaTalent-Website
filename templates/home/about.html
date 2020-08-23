@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block body %}
+<div  style="background-image: url({% static 'images/header-overlay.png' %});">
+	<div class="container">
+    	<div class="row align-items-center">
+      		<div class="col-12 col-md-5 col-lg-6 order-md-2">
+        	<!-- Image -->
+        	<img src="{% static 'images/about.png' %}" >
+      		</div>
+      		<div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" id="hh1">
+        	<!-- Heading -->
+        	<h1 class="display-3 text-center text-md-left">
+          		Welcome to <br><span class="text-primary">Yoga Talent</span>. </h1>
+          		<!-- Text -->
+          		<p class="lead text-center tmd-left text-muted mb-6 mb-lg-8">
+				<h5>Do yoga and feel good for health</h5>
+          		</p>
+				<a class="btn btn-primary m-1" role="button" href="/blog">Go To Blog</a>
+      		</div>
+    	</div>
+	</div><!-- / .row -->
+</div>
+
+<div class="row">
+  <div class="side">
+    <div align="center"><img src="{% static 'images/h1.jpg' %}" style="height:200px; width:300px;"><br>
+		<h3> More images</h3>
+		<img src="{% static 'images/h6.jpg' %}" style="height:200px; width:300px;">
+	</div>
+  </div>
+  <div class="main">
+    <h2>YOGA LIFE</h2>
+    <h5>Yoga is a way of life; it is not removed from it. We do not need to feel disappointed or frustrated considering our limitations with regard to physical health; shape and size of the body; lack of time; lack of space or unavailability of a teacher. Yoga, in fact, is the means to overcome all these problems. Yoga includes every aspect of life. Yoga touches everything in life. All healing methods and meditations are part and parcel of Yoga. Yoga is like the sun itself, which brightens everything that comes into contact with it.</h5>
+	<br>
+	  <div class="row1">
+		  <div class="column1">
+			<img src="{% static 'images/h2.jpg' %}"  style="width:100%">
+		  </div>
+		  <div class="column1">
+			<img src="{% static 'images/h3.jpg' %}" style="width:100%">
+		  </div>
+		  <div class="column1">
+			<img src="{% static 'images/h4.jpg' %}" style="width:100%">
+	  </div>
+	</div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+	<div class="row justify-content-center mb-5 pb-3">
+		<div class="col-md-12 heading-section ftco-animate text-center fadeInUp ftco-animated">
+			<a class="mb-1" style="font-family:sophia; font-size:50px;"><u>Experience of Yoga</u></a>
+        </div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<div class="pl-4 pl-md-0 pr-md-4">
+					<h4>Balance Body Mind &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+				</div><span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<div class="pl-4 pl-md-0 pr-md-4">
+					<h4>Healthy Daily Life &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+				</div><span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<div>
+					<h4>Improves your flexibility&nbsp;&nbsp;</h4>
+				</div><span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<div class="pl-4 pl-md-0 pr-md-4">
+					<h4>Protects your spine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+				</div><span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+			</div><br><br>
+		</div>
+		<div class="col">
+			<img src="{% static 'images/services.jpg' %}" height="300px">
+		</div>
+		<div class="col-md-4">
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+				<div class="text text-left pl-4">
+					<h4>Betters your bone health</h4>
+				</div>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+				<div class="text text-left pl-4">
+					<h4>Increases your blood flow</h4>
+				</div>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+				<div class="text text-left pl-4">
+					<h4>Keep a practice journal</h4>
+				</div>
+			</div><br><br>
+			<div class="services-2 ftco-animate d-flex w-100 fadeInUp ftco-animated">
+				<span><img src="{% static 'images/icons/icon.png' %}" width="50px" height="50px"></span>
+				<div class="text text-left pl-4">
+					<h4>Builds muscle strength</h4><br>
+				</div>
+			</div><br><br>
+		</div>
+	</div>
+</div>
+{% endblock %}

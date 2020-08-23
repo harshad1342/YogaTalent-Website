@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} blogHome {% endblock %}
+
+{% block body %}
+{% load static %}
+<div align="center">
+    <h1> Yoga styles</h1>
+</div>
+<div class="container my-3">
+    {% for post in allPosts %}
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color:white;">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">{{post.title}}</h3>
+          <p class="card-text mb-auto">{{post.content| truncatechars:300}}</p>
+            <div><a href="/blog/{{post.slug}}" class="btn btn-primary my-3">Continue reading</a> </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        <img src="{% static 'images/{{post.image}}' %}" id="img3">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
